@@ -25,3 +25,4 @@ npm start
 Designed for zero-config Vercel deployment from the `main` branch.
 
 <!-- redeploy: 2026-09-21 -->
+<!-- redeploy after root fix -->
