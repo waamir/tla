@@ -28,20 +28,25 @@ export default function Home(){
       </div>
     </header>
 
-    <section id="home" className="noise relative min-h-[790px] bg-[#f7f1e7] pt-32">
-      <div className="absolute left-[5%] top-44 h-24 w-24 rounded-full bg-[#f4cc63]/55 blur-sm"/><div className="absolute right-[10%] top-28 h-40 w-40 rounded-[42%_58%_60%_40%] bg-[#c9e5e6] floaty"/>
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-24">
-        <div className="relative z-10">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#16352f]/10 bg-white/70 px-4 py-2 text-xs font-bold uppercase tracking-[.15em]"><span className="h-2 w-2 rounded-full bg-[#ea815f]"/> Premium after-school + daycare</div>
-          <h1 className="max-w-3xl font-display text-6xl font-semibold leading-[.94] tracking-[-.04em] sm:text-7xl lg:text-[88px]">Where curious minds <span className="italic text-[#ea815f]">come alive.</span></h1>
-          <p className="mt-7 max-w-xl text-lg leading-8 text-[#49665e]">A thoughtfully designed after-school and daycare experience where children learn with purpose, play freely, build confidence and discover what they love.</p>
-          <div className="mt-8 flex flex-wrap gap-3"><a href="#visit" className="group inline-flex items-center gap-2 rounded-full bg-[#16352f] px-6 py-4 font-bold text-white">Schedule a visit <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1"/></a><a href="#facilities" className="rounded-full border border-[#16352f]/20 bg-white/70 px-6 py-4 font-bold">Explore the space</a></div>
-          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm font-semibold text-[#4c6960]"><span className="flex items-center gap-2"><Check className="h-4 w-4"/> Safe & supervised</span><span className="flex items-center gap-2"><Check className="h-4 w-4"/> Purpose-built zones</span><span className="flex items-center gap-2"><Check className="h-4 w-4"/> Parent updates</span></div>
+    <section id="home" className="relative bg-[#fbfaf6] pt-24">
+      <div className="mx-auto max-w-[1500px] px-5 pb-8 pt-6 lg:px-8">
+        <div className="grid items-center gap-8 lg:grid-cols-[.78fr_1.22fr]">
+          <div className="relative z-10 py-10 lg:py-16">
+            <p className="text-xs font-extrabold uppercase tracking-[.25em] text-[#728266]">After-school • Daycare • Enrichment</p>
+            <h1 className="mt-5 max-w-[620px] font-display text-6xl font-semibold leading-[.98] tracking-[-.045em] text-[#182e28] sm:text-7xl lg:text-[78px]">A Brighter Tomorrow, <span className="italic text-[#71845f]">Every Day.</span></h1>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-[#566a63]">A safe, nurturing and inspiring space where children learn, play, explore and grow — beyond the classroom.</p>
+            <div className="mt-8 flex flex-wrap gap-3"><a href="#visit" className="inline-flex items-center gap-3 rounded-full bg-[#75865e] px-7 py-4 font-bold text-white shadow-lg">Book a Tour <ArrowRight className="h-4 w-4"/></a><a href="#programs" className="rounded-full border border-[#75865e]/30 bg-white px-7 py-4 font-bold text-[#34483f]">Our Programs</a></div>
+            <div className="mt-10 grid max-w-xl grid-cols-2 gap-3 sm:grid-cols-4">
+              {[[ShieldCheck,"Safe Environment"],[UsersRound,"Caring Educators"],[BookOpen,"Small Group Sizes"],[HeartHandshake,"Holistic Development"]].map(([I,t]:any)=><div key={t} className="rounded-2xl bg-[#f2eee5] p-4 text-center"><I className="mx-auto h-6 w-6 text-[#87966f]"/><div className="mt-2 text-xs font-bold text-[#43574f]">{t}</div></div>)}
+            </div>
+          </div>
+          <div className="relative">
+            <div className="overflow-hidden rounded-[70px_22px_70px_22px] bg-[#eee7da] shadow-xl"><Image src="/tree-play-area.jpg" alt="The Learning Atelier play environment" width={1152} height={1664} priority className="max-h-[650px] h-auto w-full object-contain"/></div>
+            <div className="absolute -bottom-5 left-5 rounded-[32px] bg-[#b59abd] px-7 py-6 text-center font-display text-2xl italic leading-tight text-white shadow-xl sm:left-10">Curious Minds.<br/>Kinder Futures.</div>
+          </div>
         </div>
-        <div className="relative mx-auto w-full max-w-xl">
-          <div className="relative overflow-hidden rounded-[44px] bg-white shadow-2xl shadow-[#16352f]/15"><Image src="/play-area.jpg" alt="The Learning Atelier play area" width={1152} height={1331} priority className="h-auto w-full object-contain"/><div className="absolute inset-0 bg-gradient-to-t from-[#16352f]/30 to-transparent"/></div>
-          <div className="absolute -bottom-5 -left-4 rounded-[26px] bg-white p-5 shadow-xl"><div className="text-xs font-bold uppercase tracking-[.18em] text-[#7a938a]">Every afternoon</div><div className="mt-1 font-display text-2xl font-semibold">Learn. Make. Move.</div></div>
-          <div className="absolute -right-4 top-12 rounded-full bg-[#f4cc63] p-5 shadow-lg"><HeartHandshake className="h-7 w-7"/></div>
+        <div className="mt-10 grid overflow-hidden rounded-[28px] border border-[#dcd4c6] bg-[#f7f2e9] sm:grid-cols-2 lg:grid-cols-4">
+          {[[UsersRound,"Ages 3–12","After School & Daycare"],[BookOpen,"Homework Support","Guided Learning"],[Sparkles,"Creative & STEAM","Explore. Create. Innovate."],[HeartHandshake,"Play & Social Growth","Confidence for Life"]].map(([I,t,d]:any)=><div key={t} className="flex items-center gap-4 border-b border-[#dcd4c6] p-5 last:border-0 sm:border-r lg:border-b-0"><I className="h-8 w-8 shrink-0 text-[#9a84a4]"/><div><div className="font-bold text-[#273d35]">{t}</div><div className="text-sm text-[#68776f]">{d}</div></div></div>)}
         </div>
       </div>
     </section>
