@@ -28,39 +28,37 @@ export default function Home(){
       </div>
     </header>
 
-    <section id="home" className="relative bg-[#fbfaf6] pt-24">
-      <div className="mx-auto max-w-[1500px] px-5 pb-8 pt-6 lg:px-8">
-        <div className="grid items-center gap-8 lg:grid-cols-[.78fr_1.22fr]">
-          <div className="relative z-10 py-10 lg:py-16">
-            <p className="text-xs font-extrabold uppercase tracking-[.25em] text-[#728266]">After-school • Daycare • Enrichment</p>
-            <h1 className="mt-5 max-w-[620px] font-display text-6xl font-semibold leading-[.98] tracking-[-.045em] text-[#182e28] sm:text-7xl lg:text-[78px]">A Brighter Tomorrow, <span className="italic text-[#71845f]">Every Day.</span></h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#566a63]">A safe, nurturing and inspiring space where children learn, play, explore and grow — beyond the classroom.</p>
-            <div className="mt-8 flex flex-wrap gap-3"><a href="#visit" className="inline-flex items-center gap-3 rounded-full bg-[#75865e] px-7 py-4 font-bold text-white shadow-lg">Book a Tour <ArrowRight className="h-4 w-4"/></a><a href="#programs" className="rounded-full border border-[#75865e]/30 bg-white px-7 py-4 font-bold text-[#34483f]">Our Programs</a></div>
-            <div className="mt-10 grid max-w-xl grid-cols-2 gap-3 sm:grid-cols-4">
-              {[[ShieldCheck,"Safe Environment"],[UsersRound,"Caring Educators"],[BookOpen,"Small Group Sizes"],[HeartHandshake,"Holistic Development"]].map(([I,t]:any)=><div key={t} className="rounded-2xl bg-[#f2eee5] p-4 text-center"><I className="mx-auto h-6 w-6 text-[#87966f]"/><div className="mt-2 text-xs font-bold text-[#43574f]">{t}</div></div>)}
+    <section id="home" className="relative bg-[#fcfaf5] pt-24">
+      <div className="mx-auto max-w-[1500px] px-5 pb-4 pt-5 lg:px-8">
+        <div className="grid items-center gap-7 lg:grid-cols-[.72fr_1.28fr]">
+          <div className="relative z-10 py-8 lg:py-12">
+            <p className="text-xs font-extrabold uppercase tracking-[.25em] text-[#536b63]">After-school • Daycare • Enrichment</p>
+            <h1 className="mt-4 max-w-[600px] font-display text-6xl font-semibold leading-[.92] tracking-[-.045em] text-[#102e2a] sm:text-7xl lg:text-[76px]">A Brighter<br/>Tomorrow, <span className="italic text-[#4f875b]">Every Day</span></h1>
+            <p className="mt-6 max-w-xl text-lg leading-7 text-[#465e58]">A safe, nurturing and inspiring space where children learn, play, explore and grow — beyond the classroom.</p>
+            <div className="mt-6 flex flex-wrap gap-3"><a href="#visit" className="inline-flex items-center gap-3 rounded-full bg-[#3f7d50] px-7 py-3.5 font-bold text-white">Book a Tour <ArrowRight className="h-4 w-4"/></a><a href="#programs" className="rounded-full border border-[#3f7d50] bg-white px-7 py-3.5 font-bold text-[#245d3b]">Our Programs</a></div>
+            <div className="mt-7 grid max-w-xl grid-cols-4 gap-2">
+              {[[Leaf,"Safe & Caring","Environment"],[UsersRound,"Caring","Educators"],[BookOpen,"Small","Group Sizes"],[Sparkles,"Holistic","Development"]].map(([I,t,d]:any)=><div key={t} className="text-center"><I className="mx-auto h-7 w-7 text-[#72915e]"/><div className="mt-2 text-xs font-semibold text-[#31473f]">{t}<br/>{d}</div></div>)}
             </div>
           </div>
           <div className="relative">
-            <div className="overflow-hidden rounded-[70px_22px_70px_22px] bg-[#eee7da] shadow-xl"><Image src="/tree-play-area.jpg" alt="The Learning Atelier play environment" width={1152} height={1664} priority className="max-h-[650px] h-auto w-full object-contain"/></div>
-            <div className="absolute -bottom-5 left-5 rounded-[32px] bg-[#b59abd] px-7 py-6 text-center font-display text-2xl italic leading-tight text-white shadow-xl sm:left-10">Curious Minds.<br/>Kinder Futures.</div>
+            <div className="overflow-hidden rounded-[90px_24px_90px_24px] bg-[#eee7da]"><Image src="/tree-play-area.jpg" alt="The Learning Atelier play environment" width={1152} height={1664} priority className="h-[590px] w-full object-cover"/></div>
+            <div className="absolute -bottom-3 left-4 rounded-[55%_45%_45%_55%] bg-[#ad8bb9] px-8 py-7 text-center font-display text-2xl italic leading-tight text-white shadow-lg">Curious<br/>Minds.<br/>Kinder Futures. ♡</div>
           </div>
         </div>
-        <div className="mt-10 grid overflow-hidden rounded-[28px] border border-[#dcd4c6] bg-[#f7f2e9] sm:grid-cols-2 lg:grid-cols-4">
-          {[[UsersRound,"Ages 3–12","After School & Daycare"],[BookOpen,"Homework Support","Guided Learning"],[Sparkles,"Creative & STEAM","Explore. Create. Innovate."],[HeartHandshake,"Play & Social Growth","Confidence for Life"]].map(([I,t,d]:any)=><div key={t} className="flex items-center gap-4 border-b border-[#dcd4c6] p-5 last:border-0 sm:border-r lg:border-b-0"><I className="h-8 w-8 shrink-0 text-[#9a84a4]"/><div><div className="font-bold text-[#273d35]">{t}</div><div className="text-sm text-[#68776f]">{d}</div></div></div>)}
+        <div className="mt-5 grid overflow-hidden rounded-full border border-[#e2d8c9] bg-[#faf6ee] sm:grid-cols-2 lg:grid-cols-4">
+          {[[UsersRound,"Ages 3–12","After School & Daycare"],[BookOpen,"Homework Support","Guided Learning"],[Sparkles,"Creative & STEAM","Explore. Create. Innovate."],[HeartHandshake,"Play & Social Growth","Confidence for Life"]].map(([I,t,d]:any)=><div key={t} className="flex items-center justify-center gap-4 border-b border-[#ded5c7] p-4 sm:border-r lg:border-b-0"><I className="h-8 w-8 shrink-0 text-[#9a73a5]"/><div><div className="font-bold text-[#253b35]">{t}</div><div className="text-xs text-[#68776f]">{d}</div></div></div>)}
         </div>
       </div>
     </section>
 
-    <div className="overflow-hidden bg-[#16352f] py-4 text-white"><div className="marquee flex w-max gap-14 whitespace-nowrap text-sm font-bold uppercase tracking-[.18em]"><span>Homework Support</span><span>STEAM Lab</span><span>Creative Arts</span><span>Reading Club</span><span>Active Play</span><span>Life Skills</span><span>Daycare</span><span>Homework Support</span><span>STEAM Lab</span><span>Creative Arts</span><span>Reading Club</span><span>Active Play</span><span>Life Skills</span><span>Daycare</span></div></div>
-
-    <section id="programs" className="py-24 lg:py-32"><div className="mx-auto max-w-7xl px-5 lg:px-8">
-      <div className="grid gap-8 lg:grid-cols-2"><div><p className="text-xs font-extrabold uppercase tracking-[.22em] text-[#ea815f]">Programs that grow with them</p><h2 className="mt-4 max-w-xl font-display text-5xl font-semibold leading-tight tracking-[-.03em] lg:text-6xl">More than somewhere to go after school.</h2></div><p className="max-w-xl self-end text-lg leading-8 text-[#5b746c]">Each program balances academic confidence with creativity, movement, friendship and independence—so afternoons feel meaningful, not managed.</p></div>
-      <div className="mt-14 grid gap-5 md:grid-cols-3">{programs.map(({age,title,text,icon:Icon},i)=><article key={title} className={`rounded-[32px] p-7 ${i===0?'bg-[#dce7d7]':i===1?'bg-[#f4cc63]/55':'bg-[#c9e5e6]'}`}><div className="flex items-center justify-between"><div className="rounded-full bg-white/70 px-3 py-1 text-xs font-bold">Ages {age}</div><Icon className="h-7 w-7"/></div><h3 className="mt-12 font-display text-3xl font-semibold">{title}</h3><p className="mt-3 leading-7 text-[#49665e]">{text}</p><div className="mt-6 inline-flex items-center gap-2 text-sm font-extrabold">Explore program <ArrowRight className="h-4 w-4"/></div></article>)}</div>
-    </div></section>
-
-    <section id="facilities" className="bg-[#16352f] py-24 text-white lg:py-32"><div className="mx-auto max-w-7xl px-5 lg:px-8"><div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end"><div><p className="text-xs font-extrabold uppercase tracking-[.22em] text-[#f4cc63]">Purpose-built environment</p><h2 className="mt-4 max-w-3xl font-display text-5xl font-semibold tracking-[-.03em] lg:text-6xl">A space that invites children to explore.</h2></div><p className="max-w-md leading-7 text-white/65">Flexible, beautiful and child-centered zones designed to support focus, collaboration, imagination and movement.</p></div>
-      <div className="mt-14 grid gap-6 md:grid-cols-3">{facilities.map(([img,title,text])=><article key={title} className="group overflow-hidden rounded-[32px] bg-white/5"><div className="flex min-h-[300px] items-center justify-center overflow-hidden bg-[#f7f1e7] p-2"><Image src={`/${img}`} alt={title} width={1200} height={1200} className="max-h-[520px] h-auto w-full object-contain transition duration-500 group-hover:scale-[1.015]"/></div><div className="p-6"><h3 className="font-display text-2xl font-semibold">{title}</h3><p className="mt-2 text-sm leading-6 text-white/65">{text}</p></div></article>)}</div>
-    </div></section>
+    <section id="facilities" className="relative bg-[#fcfaf5] py-12 lg:py-16">
+      <div className="mx-auto max-w-[1380px] px-5 lg:px-8">
+        <div className="text-center"><p className="text-xs font-extrabold uppercase tracking-[.28em] text-[#536b63]">Our Facilities</p><h2 className="mt-3 font-display text-4xl font-semibold text-[#102e2a] lg:text-5xl">Thoughtfully Designed for <span className="italic text-[#4f875b]">Every Stage</span></h2><p className="mt-2 text-[#64736d]">Bright, safe and inspiring spaces where children can learn, explore and be themselves.</p></div>
+        <div className="mt-9 grid gap-6 md:grid-cols-3">
+          {[["reception.jpg","Welcoming Reception","A warm and friendly space for parents and children to begin their TLA journey."],["play-area.jpg","Active Play Area","Indoor play designed to build confidence, creativity and physical development."],["tree-play-area.jpg","Creative Learning Spaces","Flexible spaces for reading, art, STEM and co-curricular activities."]].map(([img,title,text])=><article key={title}><div className="overflow-hidden rounded-2xl bg-[#eee7da]"><Image src={`/${img}`} alt={title} width={1000} height={650} className="h-[255px] w-full object-cover"/></div><h3 className="mt-3 font-display text-2xl font-semibold text-[#17342d]">{title}</h3><p className="mt-1 max-w-sm leading-6 text-[#5f6f69]">{text}</p></article>)}
+        </div>
+      </div>
+    </section>
 
     <section id="approach" className="bg-[#f4efe5] py-24 lg:py-32"><div className="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8"><div className="lg:sticky lg:top-28 lg:self-start"><p className="text-xs font-extrabold uppercase tracking-[.22em] text-[#ea815f]">How children learn here</p><h2 className="mt-4 font-display text-5xl font-semibold tracking-[-.03em] lg:text-6xl">Curiosity first. Confidence follows.</h2><p className="mt-5 max-w-md text-lg leading-8 text-[#5b746c]">Our educators act as coaches and co-explorers—guiding children without over-directing them.</p></div><div className="space-y-4">{methods.map(([title,text],i)=><div key={title} className="rounded-[28px] border border-[#16352f]/10 bg-white/75 p-7 sm:p-8"><div className="flex gap-5"><span className="font-display text-2xl font-semibold text-[#ea815f]">0{i+1}</span><div><h3 className="font-display text-2xl font-semibold">{title}</h3><p className="mt-2 max-w-2xl leading-7 text-[#5b746c]">{text}</p></div></div></div>)}</div></div></section>
 
